@@ -1,0 +1,21 @@
+<idea-plugin version="2">
+  <id>nl.max.idea.plugin.swoolestubs</id>
+  <name>Swoole {{swoole_version}} stubs</name>
+  <version>1.0.{{swoole_version}}</version>
+  <description><![CDATA[
+    Provides stubs for Swoole {{swoole_version}}
+  ]]></description>
+  <change-notes><![CDATA[
+    <h3>1.0</h3>
+    <ul>
+      <li>Generated for Swoole {{swoole_version}} @ {{timestamp}}.</li>
+    </ul>
+  ]]>
+  </change-notes>
+  <idea-version since-build="163.3984"/>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.jetbrains.php</depends>
+  <extensions defaultExtensionNs="com.jetbrains.php">
+    <libraryRoot id="library" path="/swoole/" runtime="false"/>
+  </extensions>
+</idea-plugin>
